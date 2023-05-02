@@ -33,7 +33,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Chatbots within Software Engineering
+    - course: PhD in Chatbots in Computer Science
       institution: Chalmers University of Technology
       year: 2022-present
     - course: MA in Language Technology

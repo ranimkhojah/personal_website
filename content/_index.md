@@ -46,7 +46,7 @@ sections:
           location: Gothenburg
           date_start: '2022-12-01'
           date_end: '' 
-          description: PhD topic - Chatbots in Software Engineering
+          description: PhD project (Chatbots in Software Engineering) funded by Wallenberg AI, Autonomous Systems and Software Program (WASP).
         - title: Software Developer
           company: Volvo Trucks Technology
           company_logo: org-v
