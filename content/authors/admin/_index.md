@@ -14,7 +14,7 @@ status:
 superuser: true
 
 # Role/position/tagline
-role: PhD Student in Chatbots within Software Engineering
+role: PhD Student in Computer Science
 
 # Organizations/Affiliations to show in About widget
 organizations:
@@ -33,7 +33,7 @@ interests:
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Chatbots in Computer Science
+    - course: PhD in Computer Science
       institution: Chalmers University of Technology
       year: 2022-present
     - course: MA in Language Technology
@@ -69,9 +69,9 @@ social:
   # Link to a PDF of your resume/CV.
   # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.yaml`,
   # and uncomment the lines below.
-  - icon: cv
-    icon_pack: ai
-    link: uploads/resume.pdf
+  # - icon: cv
+  #   icon_pack: ai
+  #   link: uploads/resume.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: ''
