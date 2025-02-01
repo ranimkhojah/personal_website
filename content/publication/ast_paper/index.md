@@ -39,7 +39,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-# url_pdf: '/ast.pdf'
+# url_pdf: './ast.pdf'
 url_code: 'https://github.com/ranimkhojah/test-prioritization-tools'
 
 # Featured image

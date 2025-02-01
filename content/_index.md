@@ -27,6 +27,9 @@ sections:
     design:
       columns: '2'
       view: citation
+    design:
+      columns: '2'
+      # view: citation
   - block: experience
     id: experience
     content:

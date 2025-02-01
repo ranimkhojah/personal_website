@@ -10,15 +10,24 @@ main:
   - name: Publications
     url: '#recent'
     weight: 20
+  # - name: Teaching
+  #   url: '#teaching'
+  #   weight: 30
+  # - name: Theses
+  #   url: '#theses'
+  #   weight: 40
+  # - name: Service
+  #   url: '#service'
+    weight: 30
   - name: Experience
     url: '#experience'
-    weight: 30
+    weight: 40
   - name: Projects
     url: '#projects'
-    weight: 40
+    weight: 50
   - name: Contact
     url: '#contact'
-    weight: 50
+    weight: 60
 
 # Link to a PDF of your resume/CV from the menu.
 # To enable, copy your resume/CV to `static/uploads/resume.pdf` and uncomment the lines below.
