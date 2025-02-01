@@ -32,7 +32,7 @@ abstract: Different test prioritization techniques detect faults at earlier stag
 tags: [Diversity-based testing, Test Case Prioritization, Natural Language Processing (NLP), Level of Testing (LoT)]
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:

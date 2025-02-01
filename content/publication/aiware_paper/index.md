@@ -34,7 +34,7 @@ abstract: Software developers use natural language to interact not only with oth
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

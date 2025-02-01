@@ -36,7 +36,7 @@ abstract: Large Language Models (LLMs) are increasingly used by software enginee
 tags: []
 
 # Display this page in the Featured widget?
-featured: true
+featured: false
 
 # Custom links (uncomment lines below)
 # links:

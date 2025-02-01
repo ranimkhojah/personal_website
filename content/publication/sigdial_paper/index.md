@@ -34,7 +34,7 @@ abstract: A Natural Language Understanding (NLU) component can be used in a dial
 tags: []
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 # links:
