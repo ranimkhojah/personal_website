@@ -202,7 +202,7 @@ sections:
   # - block: collection
   #   id: talks
   #   content:
-  #     title: Recent & Upcoming Talks
+  #     title: Service and Talks
   #     filters:
   #       folders:
   #         - event
@@ -214,6 +214,8 @@ sections:
   #     title: Popular Topics
   #   design:
   #     columns: '2'
+
+
   - block: contact
     id: contact
     content:

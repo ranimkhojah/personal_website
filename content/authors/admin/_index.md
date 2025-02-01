@@ -22,13 +22,13 @@ organizations:
     # url: https://www.stanford.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include Natural Language Processing, Chatbots, Software development.
+bio: My research interests include Large Language Models, chatbots, and software development.
 
 # Interests to show in About widget
 interests:
-  - Natural language Understanding (NLU)
-  - Chatbots
-  - Software Development
+  - Large Language Models (LLM)
+  - Human aspects of chatbots
+  - Software development
 
 # Education to show in About widget
 education:
