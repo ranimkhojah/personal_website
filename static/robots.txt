@@ -1,0 +1,26 @@
+User-agent: *
+Allow: /
+
+# Prevent indexing of images
+User-agent: Googlebot-Image
+Disallow: /
+
+# Disallow all bots from indexing image files
+User-agent: *
+Disallow: /*.jpg$
+Disallow: /*.jpeg$
+Disallow: /*.png$
+Disallow: /*.gif$
+Disallow: /*.svg$
+Disallow: /*.webp$
+Disallow: /*.ico$
+
+# Disallow media and uploads directories
+Disallow: /media/
+Disallow: /uploads/
+Disallow: /assets/media/
+
+# Allow text content to be indexed
+Allow: /*.html$
+Allow: /publication/
+Allow: /project/

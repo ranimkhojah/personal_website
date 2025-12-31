@@ -1,0 +1,97 @@
+@inproceedings{khojah2023evaluating,
+  title={Evaluating the Trade-offs of Diversity-Based Test Prioritization: An Experiment},
+  author={Khojah, Ranim and Neto, Francisco Gomes de Oliveira and Chao, Chi Hong},
+  booktitle={International Conference on Automation of Software Test (AST)},
+  year={2023},
+  month={4},
+  pdf={https://ieeexplore.ieee.org/document/10174012},
+  url={https://github.com/ranimkhojah/test-prioritization-tools},
+  abstract={Different test prioritization techniques detect faults at earlier stages of test execution. To this end, Diversity-based techniques (DBT) have been cost-effective by prioritizing the most dissimilar test cases to maintain effectiveness and coverage with lower resources at different stages of the software development life cycle, called levels of testing (LoT). Diversity is measured on static test specifications to convey how different test cases are from one another. However, there is little research on DBT applied to semantic similarities of words within tests. Moreover, diversity has been extensively studied within individual LoT (unit, integration and system), but the trade-offs of such techniques across different levels are not well understood. This paper aims to reveal relationships between DBT and the LoT, as well as to compare and evaluate the cost-effectiveness and coverage of different diversity measures, namely Jaccard's Index, Levenshtein, Normalized Compression Distance (NCD), and Semantic Similarity (SS). We perform an experiment on the test suites of 7 open source projects on the unit level, 1 industrial project on the integration level, and 4 industry projects on the system level (where one project is used on both system and integration levels). Our results show that SS increases test coverage for system-level tests, and the differences in failure detection rate of each diversity increase as more prioritised tests execute. In terms of execution time, we report that Jaccard is the fastest, whereas Levenshtein is the slowest and, in some cases, simply infeasible to run. In contrast, Levenshtein detects more failures on integration level, and Jaccard more on system level.},
+  keywords={Diversity-based testing, Test Case Prioritization, Natural Language Processing (NLP), Level of Testing (LoT)}
+}
+
+@article{khojah2026policies,
+  author={Khojah, Ranim and Mohamad, Mazen and Erlenhov, Linda and de Oliveira Neto, Francisco Gomes and Leitner, Philipp},
+  journal={IEEE Software}, 
+  title={Large Language Model Company Policies and Policy Implications in Software Organizations}, 
+  year={2026},
+  volume={43},
+  number={1},
+  pages={64-72},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11206738},
+  keywords={featured,Chatbots, Policies, Software Organizations},
+  doi={10.1109/MS.2025.3622039}
+  }
+
+
+@inproceedings{khojah2024beyond,
+  title={Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice},
+  author={Khojah, Ranim and Mohamad, Mazen and Leitner, Philipp and Neto, Francisco Gomes de Oliveira},
+  booktitle={Proceedings of the ACM on Software Engineering (FSE)},
+  year={2024},
+  month={7},
+  volume={1},
+  number={FSE},
+  pages={1819--1840},
+  publisher={ACM},
+  pdf={https://dl.acm.org/doi/abs/10.1145/3660788},
+  keywords={featured},
+  abstract={Large Language Models (LLMs) are frequently discussed in academia and the general public as support tools for virtually any use case that relies on the production of text, including software engineering. Currently, there is much debate, but little empirical evidence, regarding the practical usefulness of LLM-based tools such as ChatGPT for engineers in industry. We conduct an observational study of 24 professional software engineers who have been using ChatGPT over a period of one week in their jobs, and qualitatively analyse their dialogues with the chatbot as well as their overall experience (as captured by an exit survey). We find that rather than expecting ChatGPT to generate ready-to-use software artifacts (e.g., code), practitioners more often use ChatGPT to receive guidance on how to solve their tasks or learn about a topic in more abstract terms. We also propose a theoretical framework for how the (i) purpose of the interaction, (ii) internal factors (e.g., the user's personality), and (iii) external factors (e.g., company policy) together shape the experience (in terms of perceived usefulness and trust). We envision that our framework can be used by future research to further the academic discussion on LLM usage by software engineering practitioners, and to serve as a reference point for the design of future empirical LLM research in this domain.}
+}
+
+@inproceedings{khojah2022evaluating,
+  title={Evaluating N-best Calibration of Natural Language Understanding for Dialogue Systems},
+  author={Khojah, Ranim and Berman, Alexander and Larsson, Staffan},
+  booktitle={Proceedings of the 23rd Annual Meeting of the Special Interest Group on Discourse and Dialogue (SigDIAL)},
+  year={2022},
+  month={9},
+  pages={582--594},
+  pdf={https://aclanthology.org/2022.sigdial-1.54.pdf},
+  url={https://github.com/ranimkhojah/confidence-estimation-benchmark},
+  abstract={A Natural Language Understanding (NLU) component can be used in a dialogue system to perform intent classification, returning an N-best list of hypotheses with corresponding confidence estimates. We perform an in-depth evaluation of 5 NLUs, focusing on confidence estimation. We measure and visualize cali- bration for the 10 best hypotheses on model level and rank level, and also measure classi- fication performance. The results indicate a trade-off between calibration and performance. In particular, Rasa (with Sklearn classifier) had the best calibration but the lowest performance scores, while Watson Assistant had the best performance but a poor calibration.},
+  keywords={}
+}
+
+@inproceedings{montes2025frustration,
+author = {Martinez Montes, Cristina and Khojah, Ranim},
+title = {Emotional Strain and Frustration in LLM Interactions in Software Engineering},
+year = {2025},
+isbn = {9798400713859},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+pdf = {https://dl.acm.org/doi/epdf/10.1145/3756681.3756951},
+doi = {10.1145/3756681.3756951},
+abstract = {Large Language Models (LLMs) are increasingly integrated into various daily tasks in Software Engineering, such as coding and requirement elicitation. Despite their various capabilities and constant use, some interactions can lead to unexpected challenges (e.g. hallucinations or verbose answers) and, in turn, cause emotions that develop into frustration. Frustration can negatively impact engineers’ productivity and well-being if it escalates into stress and burnout. In this paper, we assess the impact of LLM interactions on software engineers’ emotional responses, specifically strains, and identify common causes of frustration when interacting with LLMs at work. Based on 62 survey responses from software engineers in industry and academia across various companies and universities, we found that a majority of our respondents experience frustrations or other related emotions regardless of the nature of their work. Additionally, our results showed that frustration mainly stemmed from issues with correctness and less critical issues, such as adaptability to context or specific format. While such issues may not cause frustration in general, artefacts that do not follow certain preferences, standards, or best practices can make the output unusable without extensive modification, causing frustration over time. In addition to the frustration triggers, our study offers guidelines to improve the software engineers’ experience, aiming to minimise long-term consequences on mental health.},
+booktitle = {Proceedings of the 29th International Conference on Evaluation and Assessment in Software Engineering (EASE)},
+pages = {193–204},
+numpages = {12},
+keywords = {Software Engineering, Large Language Models (LLMs), Frustration, Emotions},
+location = {Istanbul, Turkey},
+series = {EASE '25}
+}
+
+@inproceedings{khojah2024human,
+  title={From Human-to-Human to Human-to-Bot Conversations in Software Engineering},
+  author={Khojah, Ranim and Neto, Francisco Gomes de Oliveira and Leitner, Philipp},
+  booktitle={International Conference on AI-powered Software (AIware)},
+  year={2024},
+  month={7},
+  pdf={https://dl.acm.org/doi/abs/10.1145/3664646.3664761},
+  abstract={Software developers use natural language to interact not only with other humans, but increasingly also with chatbots. These interactions have different properties and flow differently based on what goal the developer wants to achieve and who they interact with. In this paper, we aim to understand the dynamics of conversations that occur during modern software development after the integration of AI and chatbots, enabling a deeper recognition of the advantages and disadvantages of including chatbot interactions in addition to human conversations in collaborative work. We compile existing conversation attributes with humans and NLU-based chatbots and adapt them to the context of software development. Then, we extend the comparison to include LLM-powered chatbots based on an observational study. We present similarities and differences between human-to-human and human-to-bot conversations, also distinguishing between NLU- and LLM-based chatbots. Furthermore, we discuss how understanding the differences among the conversation styles guides the developer on how to shape their expectations from a conversation and consequently support the communication within a software team. We conclude that the recent conversation styles that we observe with LLM-chatbots can not replace conversations with humans due to certain attributes regarding social aspects despite their ability to support productivity and decrease the developers' mental load.}
+}
+
+@article{khojah2024impact,
+  title={The Impact of Prompt Programming on Function-Level Code Generation},
+  author={Khojah, Ranim and Neto, Francisco Gomes de Oliveira and Mohamad, Mazen and Leitner, Philipp},
+  journal={IEEE Transactions on Software Engineering (TSE)}, 
+  year={2025},
+  volume={51},
+  number={8},
+  pages={2381-2395},
+  keywords={featured,Large language models,Prompt programming,Code generation},
+  doi={10.1109/TSE.2025.3587794},
+  pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11077752},
+  url={https://github.com/icetlab/CodePromptEval/tree/main},
+  abstract={Large Language Models (LLMs) are increasingly used by software engineers for code generation. However, limitations of LLMs such as irrelevant or incorrect code have highlighted the need for prompt programming (or prompt engineering) where engineers apply specific prompt techniques (e.g., chain-of-thought or input-output examples) to improve the generated code. Despite this, the impact of different prompt techniques -- and their combinations -- on code generation remains underexplored. In this study, we introduce CodePromptEval, a dataset of 7072 prompts designed to evaluate five prompt techniques (few-shot, persona, chain-of-thought, function signature, list of packages) and their effect on the correctness, similarity, and quality of complete functions generated by three LLMs (GPT-4o, Llama3, and Mistral). Our findings show that while certain prompt techniques significantly influence the generated code, combining multiple techniques does not necessarily improve the outcome. Additionally, we observed a trade-off between correctness and quality when using prompt techniques. Our dataset and replication package enable future research on improving LLM-generated code and evaluating new prompt techniques.}
+}
+

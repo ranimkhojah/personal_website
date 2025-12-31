@@ -1,19 +1,20 @@
 [build]
-  command = "hugo --gc --minify -b $URL"
+  command = "bash scripts/import_publications.sh && hugo --gc --minify -b $URL"
   publish = "public"
 
 [build.environment]
   HUGO_VERSION = "0.111.3"
   HUGO_ENABLEGITINFO = "true"
+  PYTHON_VERSION = "3.11"
 
 [context.production.environment]
   HUGO_ENV = "production"
 
 [context.deploy-preview]
-  command = "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
+  command = "bash scripts/import_publications.sh && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL"
 
 [context.branch-deploy]
-  command = "hugo --gc --minify -b $DEPLOY_PRIME_URL"
+  command = "bash scripts/import_publications.sh && hugo --gc --minify -b $DEPLOY_PRIME_URL"
 
 [[plugins]]
   package = "netlify-plugin-hugo-cache-resources"

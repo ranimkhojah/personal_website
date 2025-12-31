@@ -14,22 +14,63 @@ sections:
   - block: collection
     id: recent
     content:
-      title: Publications
+      title: Selected Publications
       text: |-
         {{% callout note %}}
         See [all publications](./publication/).
         {{% /callout %}}
-        
+
       filters:
         folders:
           - publication
-        exclude_featured: true
+        exclude_featured: false
+        featured_only: true
     design:
       columns: '2'
-      view: citation
+      view: 2
+  - block: markdown
+    id: talks
+    content:
+      title: Talks & Presentations
+      text: |-
+        - **Understanding and Evaluating Chatbots in Software Engineering** - Licentiate Seminar, Chalmers University of Technology | Gothenburg, Sweden (2025).
+        - **The Art of Using ChatGPT** - Innovation Fika, Volvo Trucks | Gothenburg, Sweden (2024) - ~270 participants
+        - **ChatGPT Usage in Software Engineering Practice** - Invited Talk, SystemWeaver | Gothenburg, Sweden (2024) 
+        - **Programming without a Programming Language** - Workshop, Iceberry | Gothenburg, Sweden (2024) 
+        - **Chatbots in Software Engineering** - Invited Talk, RISE Research Institutes of Sweden | Borås, Sweden (2024)
+        - **From Human-to-Human to Human-to-Bot Interactions in Software Engineering** - Paper presentation, AIware (Co-located with FSE) | Porto de Galinhas, Brazil (2024)
+        - **Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice** - Paper presentation, FSE | Porto de Galinhas, Brazil (2024)
+        - **Evaluating the Trade-offs of Text-based Diversity in Test Prioritisation** - Paper presentation, AST (co-located with ICSE) | Melbourne, Australia (2023)
+        - **Evaluating N-best Calibration of Natural Language Understanding for Dialogue Systems** - Paper presentation, SigDIAL | Edinburgh, Scotland (2022)
     design:
       columns: '2'
-      # view: citation
+  - block: portfolio
+    id: projects
+    content:
+      title: Projects
+      filters:
+        folders:
+          - project
+      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
+      default_button_index: 0
+      # Filter toolbar (optional).
+      # Add or remove as many filters (`filter_button` instances) as you like.
+      # To show all items, set `tag` to "*".
+      # To filter by a specific tag, set `tag` to an existing tag name.
+      # To remove the toolbar, delete the entire `filter_button` block.
+      buttons:
+        - name: All
+          tag: '*'
+        - name: Dialogue Systems
+          tag: dial
+        - name: Software Development
+          tag: soft
+
+    design:
+      # Choose how many columns the section has. Valid values: '1' or '2'.
+      columns: '1'
+      view: masonry
+      flip_alt_rows: false
   - block: experience
     id: experience
     content:
@@ -48,21 +89,21 @@ sections:
           company_logo: org-gc
           location: Gothenburg
           date_start: '2022-12-01'
-          date_end: '' 
+          date_end: ''
           description: PhD project (Chatbots in Software Engineering) funded by Wallenberg AI, Autonomous Systems and Software Program (WASP).
         - title: Software Developer
           company: Volvo Trucks Technology
           company_logo: org-v
           location: Gothenburg
           date_start: '2022-09-01'
-          date_end: '2022-11-01' 
+          date_end: '2022-11-01'
           description: Automated the translation process followed in infotainment systems.
         - title: Teaching Assistant
           company: Chalmers University of Technology
           company_logo: org-gc
           location: Gothenburg
           date_start: '2022-06-01'
-          date_end: '2022-08-30' 
+          date_end: '2022-08-30'
           description: |2-
             Patricipated in Girls Code Club (GCC); a coding camp that welcomes gymnasium students and women who are looking to pursue a career within software engineering and computer science.
         - title: Research Assistant
@@ -72,7 +113,7 @@ sections:
           date_start: '2021-01-01'
           date_end: '2022-06-30'
           description: |2-
-              Assistance with research related to FaaS applications. 
+              Assistance with research related to FaaS applications.
               Performing data processing and analysis using NLP techniques.
         - title: Teaching Assistant
           company: University of Gothenburg
@@ -151,34 +192,6 @@ sections:
   #     # Choose a layout view
   #     view: compact
   #     columns: '2'
-  - block: portfolio
-    id: projects
-    content:
-      title: Projects
-      filters:
-        folders:
-          - project
-      # Default filter index (e.g. 0 corresponds to the first `filter_button` instance below).
-      default_button_index: 0
-      # Filter toolbar (optional).
-      # Add or remove as many filters (`filter_button` instances) as you like.
-      # To show all items, set `tag` to "*".
-      # To filter by a specific tag, set `tag` to an existing tag name.
-      # To remove the toolbar, delete the entire `filter_button` block.
-      buttons:
-        - name: All
-          tag: '*'
-        - name: Dialogue Systems
-          tag: dial
-        - name: Software Development
-          tag: soft
-
-    design:
-      # Choose how many columns the section has. Valid values: '1' or '2'.
-      columns: '1'
-      view: showcase
-      # For Showcase view, flip alternate rows?
-      flip_alt_rows: false
   # - block: markdown
   #   content:
   #     title: Gallery
@@ -216,49 +229,4 @@ sections:
   #     columns: '2'
 
 
-  - block: contact
-    id: contact
-    content:
-      title: Contact
-      subtitle:
-      text: |-
-        Feel free to reach out if you have any questions, inquiries, or simply want to say hello :)
-      # Contact (add or remove contact options as necessary)
-      email: khojah@chalmers.se
-      # phone: 888 888 88 88
-      # appointment_url: 'https://calendly.com'
-      address:
-        street: Hörselgången 5
-        city: Göteborg
-        postcode: '417 56'
-        country: Sweden
-        # country_code: US
-      # directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-      office_hours:
-        - 'Email for appointment'
-      # contact_links:
-      #   - icon: twitter
-      #     icon_pack: fab
-      #     name: DM Me
-      #     link: 'https://twitter.com/Twitter'
-      #   - icon: skype
-      #     icon_pack: fab
-      #     name: Skype Me
-      #     link: 'skype:echo123?call'
-      #   - icon: video
-      #     icon_pack: fas
-      #     name: Zoom Me
-      #     link: 'https://zoom.com'
-      # Automatically link email and phone or display as text?
-      autolink: true
-      # Email form provider
-      form:
-        provider: netlify
-        formspree:
-          id:
-        netlify:
-          # Enable CAPTCHA challenge to reduce spam?
-          captcha: false
-    design:
-      columns: '2'
 ---

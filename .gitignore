@@ -10,3 +10,7 @@ go.sum
 .hugo_build.lock
 .DS_Store
 *.DS_Store
+
+# Generated publication files (auto-generated from publications.bib)
+content/publication/*/
+!content/publication/_index.md
