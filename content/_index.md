@@ -33,15 +33,32 @@ sections:
     content:
       title: Talks & Presentations
       text: |-
-        - **Understanding and Evaluating Chatbots in Software Engineering** - Licentiate Seminar, Chalmers University of Technology | Gothenburg, Sweden (2025).
-        - **The Art of Using ChatGPT** - Innovation Fika, Volvo Trucks | Gothenburg, Sweden (2024) - ~270 participants
-        - **ChatGPT Usage in Software Engineering Practice** - Invited Talk, SystemWeaver | Gothenburg, Sweden (2024) 
-        - **Programming without a Programming Language** - Workshop, Iceberry | Gothenburg, Sweden (2024) 
-        - **Chatbots in Software Engineering** - Invited Talk, RISE Research Institutes of Sweden | Borås, Sweden (2024)
-        - **From Human-to-Human to Human-to-Bot Interactions in Software Engineering** - Paper presentation, AIware (Co-located with FSE) | Porto de Galinhas, Brazil (2024)
-        - **Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice** - Paper presentation, FSE | Porto de Galinhas, Brazil (2024)
-        - **Evaluating the Trade-offs of Text-based Diversity in Test Prioritisation** - Paper presentation, AST (co-located with ICSE) | Melbourne, Australia (2023)
-        - **Evaluating N-best Calibration of Natural Language Understanding for Dialogue Systems** - Paper presentation, SigDIAL | Edinburgh, Scotland (2022)
+        **Understanding and Evaluating Chatbots in Software Engineering**
+        *Licentiate Seminar, Chalmers University of Technology, Gothenburg, Sweden (2025)*
+
+        **The Art of Using ChatGPT**
+        *Innovation Fika, Volvo Trucks, Gothenburg, Sweden (2024)*
+
+        **ChatGPT Usage in Software Engineering Practice**
+        *Invited Talk, SystemWeaver, Gothenburg, Sweden (2024)*
+
+        **Programming without a Programming Language**
+        *Workshop, Iceberry, Gothenburg, Sweden (2024)*
+
+        **Chatbots in Software Engineering**
+        *Invited Talk, RISE Research Institutes of Sweden, Borås, Sweden (2024)*
+
+        **From Human-to-Human to Human-to-Bot Interactions in Software Engineering**
+        *Paper presentation, AIware (Co-located with FSE), Porto de Galinhas, Brazil (2024)*
+
+        **Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice**
+        *Paper presentation, FSE, Porto de Galinhas, Brazil (2024)*
+
+        **Evaluating the Trade-offs of Text-based Diversity in Test Prioritisation**
+        *Paper presentation, AST (co-located with ICSE), Melbourne, Australia (2023)*
+
+        **Evaluating N-best Calibration of Natural Language Understanding for Dialogue Systems**
+        *Paper presentation, SigDIAL, Edinburgh, Scotland (2022)*
     design:
       columns: '2'
   - block: portfolio
