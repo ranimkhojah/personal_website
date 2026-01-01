@@ -1,0 +1,26 @@
+// Custom styles for the website
+
+// Make all section headers smaller
+.page-section h2.section-heading,
+.page-section h2,
+section h2 {
+  font-size: 1.3rem !important;
+}
+
+// Make publication titles smaller in the Selected Publications section
+#recent .article-title {
+  font-size: 1rem !important;
+}
+
+#recent .article-title a {
+  font-size: 1rem !important;
+}
+
+// Make Talks & Presentations section text smaller
+#talks {
+  font-size: 0.85rem !important;
+}
+
+#talks p, #talks strong, #talks em {
+  font-size: 0.85rem !important;
+}

@@ -34,31 +34,31 @@ sections:
       title: Talks & Presentations
       text: |-
         **Understanding and Evaluating Chatbots in Software Engineering**
-        *Licentiate Seminar, Chalmers University of Technology, Gothenburg, Sweden (2025)*
+        *Licentiate Seminar*, Chalmers University of Technology, Gothenburg, Sweden (2025)
 
         **The Art of Using ChatGPT**
-        *Innovation Fika, Volvo Trucks, Gothenburg, Sweden (2024)*
+        *Innovation Fika*, Volvo Trucks, Gothenburg, Sweden (2024)
 
         **ChatGPT Usage in Software Engineering Practice**
-        *Invited Talk, SystemWeaver, Gothenburg, Sweden (2024)*
+        *Invited Talk*, SystemWeaver, Gothenburg, Sweden (2024)
 
         **Programming without a Programming Language**
-        *Workshop, Iceberry, Gothenburg, Sweden (2024)*
+        *Workshop*, Iceberry, Gothenburg, Sweden (2024)
 
         **Chatbots in Software Engineering**
-        *Invited Talk, RISE Research Institutes of Sweden, Borås, Sweden (2024)*
+        *Invited Talk*, RISE Research Institutes of Sweden, Borås, Sweden (2024)
 
         **From Human-to-Human to Human-to-Bot Interactions in Software Engineering**
-        *Paper presentation, AIware (Co-located with FSE), Porto de Galinhas, Brazil (2024)*
+        *Paper presentation*, AIware (Co-located with FSE), Porto de Galinhas, Brazil (2024)
 
         **Beyond Code Generation: An Observational Study of ChatGPT Usage in Software Engineering Practice**
-        *Paper presentation, FSE, Porto de Galinhas, Brazil (2024)*
+        *Paper presentation*, FSE, Porto de Galinhas, Brazil (2024)
 
         **Evaluating the Trade-offs of Text-based Diversity in Test Prioritisation**
-        *Paper presentation, AST (co-located with ICSE), Melbourne, Australia (2023)*
+        *Paper presentation*, AST (co-located with ICSE), Melbourne, Australia (2023)
 
         **Evaluating N-best Calibration of Natural Language Understanding for Dialogue Systems**
-        *Paper presentation, SigDIAL, Edinburgh, Scotland (2022)*
+        *Paper presentation*, SigDIAL, Edinburgh, Scotland (2022)
     design:
       columns: '2'
   - block: portfolio
@@ -88,6 +88,48 @@ sections:
       columns: '1'
       view: masonry
       flip_alt_rows: false
+  - block: markdown
+    id: service
+    content:
+      title: Academic Service
+      text: |-
+        <div style="font-size: 0.9rem;">
+
+        **Committee Member:**
+
+        • Program committee member - BotSE Workshop (co-located with ICSE 2024)
+
+        • Publicity Chair - AIware Conference (co-located with ASE 2025)
+
+        • Program committee member - BoatSE Workshop (co-located with ICSE 2025)
+
+        **Student Volunteer:**
+
+        • ICSE 2023 - Melbourne, Australia
+
+        • ICSE 2024 - Lisbon, Portugal
+
+        • ASE 2025 - Seoul, South Korea
+
+        **Teaching duties:**
+
+        • Data Management (2025-2026): Teaching, Assignment design, assessment.
+
+        • Fundamentals of Programming (2024-2025): Teaching, Creating course material.
+
+        • Object Oriented Programming (2018-2020, 2022-2023): Teaching, Creating course material, assessment.
+
+        • Distributed Systems (2024): Supervising and assessing project groups.
+
+        **Thesis Supervision:**
+
+        • *Bachelor thesis:* "Developer Behavior in Response to LLM-Generated Code Refactoring Suggestions", Main supervisor (2025) - with David Schön, Faiza Amjad, and Tehreem Asif.
+
+        • *Master thesis:* "Leveraging Large Language Models for Cybersecurity Risk Assessment", Co-supervisor (2024) - with Fikret Mert Gültekin and Oscar Lilja
+
+        </div>
+    design:
+      columns: '2'
   - block: experience
     id: experience
     content:
