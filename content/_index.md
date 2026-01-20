@@ -33,11 +33,14 @@ sections:
     content:
       title: Talks & Presentations
       text: |-
+        **Chatbots in Software Engineering**
+        *Scientific highlights at the WASP Winter Conference (ca 500 attendees)*, Örebro, Sweden (2026)
+
         **Understanding and Evaluating Chatbots in Software Engineering**
         *Licentiate Seminar*, Chalmers University of Technology, Gothenburg, Sweden (2025)
 
         **The Art of Using ChatGPT**
-        *Innovation Fika*, Volvo Trucks, Gothenburg, Sweden (2024)
+        *Innovation Fika (ca 300 attendees)*, Volvo Trucks, Gothenburg, Sweden (2024)
 
         **ChatGPT Usage in Software Engineering Practice**
         *Invited Talk*, SystemWeaver, Gothenburg, Sweden (2024)
