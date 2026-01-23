@@ -190,12 +190,12 @@ show_date: false
 publication_types: ['{pub_type}']
 
 # Publication name and optional abbreviated publication name.
-publication: ''
+publication: '*{venue}*, {year}'
 
 abstract: {abstract}
 
 # Summary. An optional shortened abstract.
-summary: "*{venue}*, {year}"
+summary: ""
 
 tags: {tags}
 
