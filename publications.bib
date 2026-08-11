@@ -19,7 +19,7 @@
   number={1},
   pages={64-72},
   pdf={https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=11206738},
-  keywords={featured,Chatbots, Policies, Software Organizations},
+  keywords={Chatbots, Policies, Software Organizations},
   doi={10.1109/MS.2025.3622039}
   }
 
@@ -79,6 +79,53 @@ series = {EASE '25}
   pdf={https://dl.acm.org/doi/abs/10.1145/3664646.3664761},
   abstract={Software developers use natural language to interact not only with other humans, but increasingly also with chatbots. These interactions have different properties and flow differently based on what goal the developer wants to achieve and who they interact with. In this paper, we aim to understand the dynamics of conversations that occur during modern software development after the integration of AI and chatbots, enabling a deeper recognition of the advantages and disadvantages of including chatbot interactions in addition to human conversations in collaborative work. We compile existing conversation attributes with humans and NLU-based chatbots and adapt them to the context of software development. Then, we extend the comparison to include LLM-powered chatbots based on an observational study. We present similarities and differences between human-to-human and human-to-bot conversations, also distinguishing between NLU- and LLM-based chatbots. Furthermore, we discuss how understanding the differences among the conversation styles guides the developer on how to shape their expectations from a conversation and consequently support the communication within a software team. We conclude that the recent conversation styles that we observe with LLM-chatbots can not replace conversations with humans due to certain attributes regarding social aspects despite their ability to support productivity and decrease the developers' mental load.}
 }
+
+@inproceedings{schon2026patterns,
+  title={Patterns of Developer Adoption of LLM-Generated Code Refactoring Suggestions},
+  author={Schön, David and Amjad, Faiza and Asif, Tehreem and Khojah, Ranim and Mohamad, Mazen and Neto, Francisco Gomes de Oliveira and Leitner, Philipp},
+  booktitle={Proceedings of the 22nd International Conference on Predictive Models and Data Analytics in Software Engineering (PROMISE)},
+  year={2026},
+  doi={10.1145/3803846.3807462},
+  pdf={https://dl.acm.org/doi/10.1145/3803846.3807462},
+  url={https://arxiv.org/abs/2605.04835},
+  abstract={Large language models (LLMs) have gained widespread popularity and have steadily improved over time, enabling software developers to use them for various code-related tasks. One common task is code refactoring, where the LLM suggests changes for the developer to apply to their code to improve quality attributes such as readability or maintainability. While current research focuses on evaluating LLM-generated refactoring suggestions, there is a limited understanding of how developers apply these suggestions in practice. To explore this, we analyze 169 GitHub commits where developers refactor their code based on a ChatGPT conversation linked in the commit message. We found that developers mostly accept and use the suggestions without modifications. When changes are made, they are mostly major and fall into five different patterns that depend on the refactoring activity, the developer's prompt, and the validity of the response from ChatGPT.}
+}
+
+@inproceedings{khojah2026scrutiny,
+  title={Same Scrutiny, More Time: Eye Tracking Insights into Reviewing LLM-Labelled Code},
+  author={Khojah, Ranim and Neto, Francisco Gomes de Oliveira and Mohamad, Mazen and Frattini, Julian and Leitner, Philipp},
+  booktitle={Proceedings of the 41st IEEE/ACM International Conference on Automated Software Engineering (ASE)},
+  year={2026},
+  pdf={https://arxiv.org/pdf/2606.26505},
+  url={https://zenodo.org/records/21180198},
+  keywords={featured},
+  abstract={Modern software development increasingly involves the use of large language models (LLMs) to generate code. Despite their rapid advancement, LLMs remain prone to errors and hallucinations, emphasizing the importance of careful code inspection. However, in practice, developers' trust in LLM-generated code and their willingness to review it thoroughly may differ from these recommendations. How developers actually behave when reviewing LLM-generated code remains largely unexplored. In this study, we conduct a Wizard-of-Oz experiment to examine how software engineers behave when code is explicitly labeled as LLM-generated during a code review task. We collect both behavioral data and participant feedback through eye-tracking and exit interviews. Combining Bayesian data analysis with qualitative analysis, we found that while the thoroughness of code review did not change for participants, they spent more time fixating on LLM-labelled code, indicating that the label itself influences attention. Practitioners also adapted their review strategy for LLM-labelled code by assessing the code based on specific criteria (e.g., logical correctness), or using the prompt to guide their review. These findings inform LLM-based tool design on labelling while incorporating the prompt as a software artifact. Our study reveals a gap between reviewers' intentions and actual reviewing behaviour, highlighting the need for software companies to revisit their AI policies (particularly regarding LLM-assisted development) to better support developers in reviewing LLM-generated code.}
+}
+
+@article{groner2026empowering,
+  title={Empowering Software Engineers to Design More Secure Web Applications: Guidelines and Potential of Using LLMs as a Recommender Tool},
+  author={Groner, Raffaela and Svensson, Klara and Axelrod, Drake and Khojah, Ranim and Mohamad, Mazen and Wohlrab, Rebekka},
+  journal={Journal of Software: Evolution and Process},
+  year={2026},
+  volume={38},
+  number={2},
+  pages={e70083},
+  doi={10.1002/smr.70083},
+  pdf={https://research.chalmers.se/publication/550678/file/550678_Fulltext.pdf},
+  url={https://doi.org/10.1002/smr.70083},
+  abstract={As software applications get increasingly connected and complex, cybersecurity becomes more and more important to consider during development and evaluation. Software engineers need to be aware of various security threats and the countermeasures that can be taken to mitigate them. Currently, there is a lack of guidance for software engineers aiming to develop secure web applications. We conducted a design science research study, resulting in a set of guidelines to aid software engineers in developing secure web applications. The set of guidelines was constructed based on interview data with 10 industry practitioners. These guidelines were then evaluated using a survey with 28 respondents. Additionally, we conducted experiments in which we provided a large language model with our guidelines and vulnerability reports as input. The large language model should extend the given vulnerability reports by recommending which of our guidelines can help prevent the given vulnerability in the future. The extended reports were evaluated by two external researchers experienced in cyber security and one author. Our results indicate that developers consider using these proposed guidelines for the development and assessment of secure web applications in different stages of the software development lifecycle. Our results also show that it is possible to automatically enhance vulnerability reports to support developers meaningfully and that the guidelines recommended by the large language model are useful to prevent the respective vulnerabilities in the future.}
+}
+
+@inproceedings{gultekin2025leveraging,
+  title={Leveraging Large Language Models for Cybersecurity Risk Assessment -- A Case from Forestry Cyber-Physical Systems},
+  author={Gültekin, Fikret Mert and Lilja, Oscar and Khojah, Ranim and Wohlrab, Rebekka and Damschen, Marvin and Mohamad, Mazen},
+  booktitle={1st Workshop on Autonomous Agents in Software Engineering (AgenticSE), co-located with ASE'26},
+  year={2025},
+  pdf={https://ieeexplore.ieee.org/document/11334638/},
+  url={https://arxiv.org/abs/2510.06343},
+  abstract={In safety-critical software systems, cybersecurity activities become essential, with risk assessment being one of the most critical. In many software teams, cybersecurity experts are either entirely absent or represented by only a small number of specialists. As a result, the workload for these experts becomes high, and software engineers would need to conduct cybersecurity activities themselves. This creates a need for a tool to support cybersecurity experts and engineers in evaluating vulnerabilities and threats during the risk assessment process. This paper explores the potential of leveraging locally hosted large language models (LLMs) with retrieval-augmented generation to support cybersecurity risk assessment in the forestry domain while complying with data protection and privacy requirements that limit external data sharing. We performed a design science study involving 12 experts in interviews, interactive sessions, and a survey within a large-scale project. The results demonstrate that LLMs can assist cybersecurity experts by generating initial risk assessments, identifying threats, and providing redundancy checks. The results also highlight the necessity for human oversight to ensure accuracy and compliance. Despite trust concerns, experts were willing to utilize LLMs in specific evaluation and assistance roles, rather than solely relying on their generative capabilities. This study provides insights that encourage the use of LLM-based agents to support the risk assessment process of cyber-physical systems in safety-critical domains.}
+}
+
 
 @article{khojah2024impact,
   title={The Impact of Prompt Programming on Function-Level Code Generation},
