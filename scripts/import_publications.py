@@ -158,8 +158,18 @@ def get_publication_type(entry_type):
     return type_map.get(entry_type.lower(), '0')
 
 
+def yaml_single_quote(value):
+    """Escape a value for embedding in a single-quoted YAML scalar"""
+    return str(value).replace("'", "''")
+
+
 def generate_frontmatter(title, authors, date, pub_type, venue, abstract, tags, featured, url_pdf, url_code, year):
     """Generate Hugo frontmatter"""
+    title = yaml_single_quote(title)
+    venue = yaml_single_quote(venue)
+    url_pdf = yaml_single_quote(url_pdf)
+    url_code = yaml_single_quote(url_code)
+
     frontmatter = f"""---
 title: '{title}'
 
