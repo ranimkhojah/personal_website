@@ -8,7 +8,6 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: collection
@@ -100,11 +99,13 @@ sections:
 
         **Committee Member:**
 
-        • Program committee member - BotSE Workshop (co-located with ICSE 2024)
+        • **[AIware Conference](https://conf.researchr.org/home/aiware-2025)** (co-located with ASE 2025) - Publicity chair
 
-        • Publicity Chair - AIware Conference (co-located with ASE 2025)
+        • **[BotSE Workshop](https://botse.github.io/2025/)** (co-located with ICSE 2025) - Program committee member
 
-        • Program committee member - BoatSE Workshop (co-located with ICSE 2025)
+        • **[BoatSE Workshop](https://conf.researchr.org/home/icse-2026/botse-2026)** (co-located with ICSE 2026) - Program committee member
+
+        • **[CAIN](https://conf.researchr.org/home/cain-2027)** (co-located with ICSE 2027) - Proceedings chair
 
         **Student Volunteer:**
 
@@ -126,9 +127,21 @@ sections:
 
         **Thesis Supervision:**
 
-        • *Bachelor thesis:* "Developer Behavior in Response to LLM-Generated Code Refactoring Suggestions", Main supervisor (2025) - with David Schön, Faiza Amjad, and Tehreem Asif.
+        • **["Tracybot: Tracing LLM-Generated Code to Prompts"](https://gupea.ub.gu.se/server/api/core/bitstreams/cbdd9fee-8ac9-465e-9a86-8d83e3412c92/content)**<br>
+        Bachelor thesis · Main supervisor · 2026<br>
+        With Aliaksei Khval, Răzvan Albu, Maxine Orlova, Danis Music, and Filipe Araújo Veras Rosa
 
-        • *Master thesis:* "Leveraging Large Language Models for Cybersecurity Risk Assessment", Co-supervisor (2024) - with Fikret Mert Gültekin and Oscar Lilja
+        • **"Evaluating the Potential Benefits of Using LLMs for Mutation Testing and Unit Test Generation"**<br>
+        Bachelor thesis · Main supervisor · 2026 · in collaboration with Ericsson<br>
+        With Setareh Golchin Jouposhti and Tanya Nordh
+
+        • **["Developer Behavior in Response to LLM-Generated Code Refactoring Suggestions"](https://gupea.ub.gu.se/items/a8b300c2-6677-43ca-89c4-3d2180badfc8)**<br>
+        Bachelor thesis · Main supervisor · 2025<br>
+        With David Schön, Faiza Amjad, and Tehreem Asif
+
+        • **["Leveraging Large Language Models for Cybersecurity Risk Assessment"](https://odr.chalmers.se/server/api/core/bitstreams/44987f51-b903-4561-8dc7-7932ee934835/content)**<br>
+        Master thesis · Co-supervisor · 2024 · in collaboration with RISE Research Institutes of Sweden<br>
+        With Fikret Mert Gültekin and Oscar Lilja
 
         </div>
     design:

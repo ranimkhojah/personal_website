@@ -1,26 +1,229 @@
 // Custom styles for the website
 
-// Make all section headers smaller
-.page-section h2.section-heading,
-.page-section h2,
-section h2 {
-  font-size: 1.3rem !important;
+// ---------------------------------------------------------------------
+// Typography scale
+// One consistent, compact scale used everywhere below instead of
+// ad hoc sizes, so headers/subheaders/descriptions read the same
+// across every section.
+// ---------------------------------------------------------------------
+$fs-header: 1.3rem;    // Section titles (h1) + bio name
+$fs-subheader: 0.9rem; // Card/entry titles, role line, org line
+$fs-body: 0.8rem;      // Paragraph/description text
+$fs-meta: 0.75rem;     // Dates, small labels, toggle buttons
+
+// Reduce the large default bottom padding on every section (top kept as-is)
+.home-section {
+  padding-bottom: 60px;
 }
 
-// Make publication titles smaller in the Selected Publications section
-#recent .article-title {
-  font-size: 1rem !important;
+// Section headers (these render as h1 inside .section-heading)
+.section-heading h1,
+#about h1 {
+  font-size: $fs-header !important;
 }
 
+// Bio section: photo, name, role
+#profile {
+  padding: 15px 10px;
+}
+
+#profile .avatar {
+  width: 180px;
+  height: 180px;
+}
+
+.portrait-title h2 {
+  font-size: $fs-header !important;
+}
+
+.portrait-title h3 {
+  font-size: $fs-subheader !important;
+}
+
+// Vertically center the bio text against the taller profile column.
+#about .container > .row {
+  align-items: center;
+}
+
+#about .article-style,
+#about .article-style p {
+  font-size: $fs-body !important;
+}
+
+// Experience section
+.experience .card-body {
+  padding: 0.75rem 1rem;
+}
+
+.experience .section-subheading {
+  font-size: $fs-subheader !important;
+}
+
+.experience .card-text,
+.experience .card-text p {
+  font-size: $fs-body !important;
+  margin-bottom: 0 !important;
+}
+
+.experience .card-text {
+  margin-top: 0.4rem;
+}
+
+.experience .col.py-2 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.experience .card {
+  margin-bottom: 0.9rem;
+}
+
+// Duration shown inline next to the organization name
+.exp-duration {
+  font-size: $fs-meta;
+  font-weight: normal;
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.dark .exp-duration {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+// Selected Publications section
+#recent .article-title,
 #recent .article-title a {
-  font-size: 1rem !important;
+  font-size: $fs-subheader !important;
 }
 
-// Make Talks & Presentations section text smaller
-#talks {
-  font-size: 0.85rem !important;
+// Callout boxes (e.g. the "See all publications" note)
+.alert,
+.alert > div {
+  font-size: $fs-body !important;
 }
 
-#talks p, #talks strong, #talks em {
-  font-size: 0.85rem !important;
+// Talks & Presentations and Academic Service sections
+#talks,
+#talks p,
+#talks strong,
+#talks em,
+#service,
+#service p,
+#service strong,
+#service em {
+  font-size: $fs-body !important;
+}
+
+// Project filter buttons ("All", "Dialogue Systems", ...): match the type scale
+.project-filters .btn {
+  font-size: $fs-subheader !important;
+  font-weight: 500 !important;
+}
+
+// Projects: horizontal scroll carousel instead of masonry grid
+.project-carousel {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-carousel-track {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scroll-behavior: smooth;
+  padding: 0.5rem 0.25rem 1.25rem;
+  flex: 1 1 auto;
+  scrollbar-width: thin;
+}
+
+.project-carousel-item {
+  flex: 0 0 auto;
+  width: 360px;
+  scroll-snap-align: start;
+  display: flex;
+}
+
+.project-carousel-item.d-none {
+  display: none;
+}
+
+.project-carousel-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.project-carousel-card .article-banner {
+  width: 100%;
+  height: auto;
+}
+
+.project-carousel-card .article-title {
+  font-size: $fs-subheader !important;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.6em;
+}
+
+.project-carousel-summary {
+  flex: 1 1 auto;
+}
+
+.project-carousel-summary,
+.project-carousel-summary p {
+  color: #888 !important;
+  font-size: $fs-body !important;
+}
+
+.project-carousel-summary p {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.project-carousel-summary.is-expanded p {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.project-carousel-toggle {
+  display: none;
+  background: none;
+  border: none;
+  padding: 0.2rem 0 0;
+  margin: 0;
+  font-size: $fs-meta;
+  font-weight: normal;
+  color: #1565c0;
+  cursor: pointer;
+}
+
+.project-carousel-toggle:hover,
+.project-carousel-toggle:focus {
+  text-decoration: underline;
+}
+
+.project-carousel-summary.has-overflow .project-carousel-toggle {
+  display: inline-block;
+}
+
+.project-carousel-arrow {
+  flex: 0 0 auto;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+@media (max-width: 576px) {
+  .project-carousel-item {
+    width: 260px;
+  }
 }

@@ -1,0 +1,11 @@
+# Font style metadata
+name = "Custom"
+
+# Optional Google font URL
+google_fonts = "family=Piazzolla:ital,wght@0,400;0,600;1,400&family=Inter:wght@400;500;700&family=Roboto+Mono"
+
+# Font families
+heading_font = "Piazzolla"
+body_font = "Inter"
+nav_font = "Inter"
+mono_font = "Roboto Mono"
