@@ -1,0 +1,50 @@
+{{/* Compact card for the project carousel: no date metadata, wide/short image crop. */}}
+{{ $item := .item }}
+{{ $has_attachments := partial "functions/has_attachments" $item }}
+
+{{ $link := $item.RelPermalink }}
+{{ $target := "" }}
+{{ if $item.Params.external_link }}
+  {{ $link = $item.Params.external_link }}
+  {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+{{ end }}
+
+{{ $summary := "" }}
+{{ if $item.Params.summary }}
+  {{ $summary = $item.Params.summary | markdownify | emojify }}
+{{ else if $item.Params.abstract }}
+  {{ $summary = $item.Params.abstract | markdownify | emojify }}
+{{ else if $item.Summary }}
+  {{ $summary = $item.Summary }}
+{{ end }}
+
+<div class="card-simple project-carousel-card">
+  {{ $resource := partial "functions/get_featured_image.html" $item }}
+  {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
+  {{ with $resource }}
+    {{ $image := .Fill (printf "600x280 webp %s" $anchor) }}
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>
+      <div class="img-hover-zoom">
+        <img src="{{ $image.RelPermalink }}" height="{{ $image.Height }}" width="{{ $image.Width }}"
+            class="article-banner" alt="{{ $item.Title }}" loading="lazy">
+      </div>
+    </a>
+  {{end}}
+
+  <div class="section-subheading article-title mb-1 mt-3">
+    <a href="{{ $link }}" {{ $target | safeHTMLAttr }}>{{ $item.Title }}</a>
+  </div>
+
+  {{ with $summary }}
+  <div class="article-style project-carousel-summary" data-project-summary>
+    <p>{{.}}</p>
+    <button type="button" class="project-carousel-toggle" data-project-summary-toggle aria-expanded="false">Show more</button>
+  </div>
+  {{ end }}
+
+  {{ if $has_attachments }}
+  <div class="btn-links">
+    {{ partial "page_links" (dict "page" $item "is_list" 1) }}
+  </div>
+  {{ end }}
+</div>

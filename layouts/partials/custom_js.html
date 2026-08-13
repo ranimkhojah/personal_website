@@ -1,0 +1,60 @@
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  document.querySelectorAll('[data-project-carousel]').forEach(function (carousel) {
+    var track = carousel.querySelector('.project-carousel-track');
+    var prevBtn = carousel.querySelector('.project-carousel-arrow--prev');
+    var nextBtn = carousel.querySelector('.project-carousel-arrow--next');
+    if (!track) return;
+
+    function scrollByCard(direction) {
+      var item = track.querySelector('.project-carousel-item:not(.d-none)');
+      var amount = item ? item.getBoundingClientRect().width + 20 : 300;
+      track.scrollBy({ left: direction * amount, behavior: 'smooth' });
+    }
+
+    if (prevBtn) prevBtn.addEventListener('click', function () { scrollByCard(-1); });
+    if (nextBtn) nextBtn.addEventListener('click', function () { scrollByCard(1); });
+
+    var section = carousel.closest('section') || carousel.parentElement;
+    var filterButtons = section ? section.querySelectorAll('.project-filters a') : [];
+    var defaultFilterEl = section ? section.querySelector('.default-project-filter') : null;
+
+    function applyFilter(selector) {
+      track.querySelectorAll('.project-carousel-item').forEach(function (el) {
+        var show = selector === '*' || el.matches(selector);
+        el.classList.toggle('d-none', !show);
+      });
+      track.scrollTo({ left: 0, behavior: 'smooth' });
+    }
+
+    filterButtons.forEach(function (button) {
+      button.addEventListener('click', function (e) {
+        e.preventDefault();
+        applyFilter(button.getAttribute('data-filter'));
+        filterButtons.forEach(function (b) { b.classList.remove('active'); });
+        button.classList.add('active');
+      });
+    });
+
+    if (defaultFilterEl && defaultFilterEl.textContent.trim() !== '*') {
+      applyFilter(defaultFilterEl.textContent.trim());
+    }
+  });
+
+  document.querySelectorAll('[data-project-summary]').forEach(function (summary) {
+    var toggle = summary.querySelector('[data-project-summary-toggle]');
+    var text = summary.querySelector('p');
+    if (!toggle || !text) return;
+
+    if (text.scrollHeight > text.clientHeight + 1) {
+      summary.classList.add('has-overflow');
+    }
+
+    toggle.addEventListener('click', function () {
+      var expanded = summary.classList.toggle('is-expanded');
+      toggle.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+      toggle.textContent = expanded ? 'Show less' : 'Show more';
+    });
+  });
+});
+</script>

@@ -8,7 +8,6 @@ sections:
   - block: about.biography
     id: about
     content:
-      title: Biography
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: admin
   - block: collection
@@ -100,11 +99,13 @@ sections:
 
         **Committee Member:**
 
-        • Program committee member - BotSE Workshop (co-located with ICSE 2024)
+        • **[AIware Conference](https://conf.researchr.org/home/aiware-2025)** (co-located with ASE 2025) - Publicity chair
 
-        • Publicity Chair - AIware Conference (co-located with ASE 2025)
+        • **[BotSE Workshop](https://botse.github.io/2025/)** (co-located with ICSE 2025) - Program committee member
 
-        • Program committee member - BoatSE Workshop (co-located with ICSE 2025)
+        • **[BoatSE Workshop](https://conf.researchr.org/home/icse-2026/botse-2026)** (co-located with ICSE 2026) - Program committee member
+
+        • **[CAIN](https://conf.researchr.org/home/cain-2027)** (co-located with ICSE 2027) - Proceedings chair
 
         **Student Volunteer:**
 

@@ -24,25 +24,6 @@ organizations:
 # Short bio (displayed in user profile at end of posts)
 bio: My research interests include Large Language Models, chatbots, and software development.
 
-# Interests to show in About widget
-interests:
-  - Large Language Models (LLM)
-  - Human aspects of chatbots
-  - Software development
-
-# Education to show in About widget
-education:
-  courses:
-    - course: PhD in Computer Science
-      institution: Chalmers University of Technology
-      year: 2022-present
-    - course: MA in Language Technology
-      institution: University of Gothenburg
-      year: 2020-2022
-    - course: BSc in Software Engineering and Management
-      institution: Chalmers University of Technology
-      year: 2017-2020
-
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
 #   For an email link, use "fas" icon pack, "envelope" icon, and a link in the
@@ -50,7 +31,7 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: 'mailto:khojah@chalmers.se'
   # - icon: twitter
   #   icon_pack: fab
   #   link: https://twitter.com/GeorgeCushen
@@ -80,5 +61,6 @@ email: ''
 highlight_name: true
 ---
 
-Ranim Khojah is a PhD student at Chalmers University of Technology, conducting research on the use of large language models in software engineering. She obtained her master's degree in Language Technology from the University of Gothenburg in 2022. Her current interests include chatbots that can assist with activities during the software development lifecycle, such as code generation, explanation, and completion.
+I am a doctoral student in Computer Science and Engineering at [Chalmers University of Technology](https://www.chalmers.se) funded by the [Wallenberg AI, Autonomous Systems and Software Program (WASP)](https://wasp-sweden.org).
+I am part of the [Internet Computing and Emerging Technologies Lab (ICET-lab)](https://www.icet-lab.eu), where my research interests circle around large language models and chatbots, and how they can support software development. I am particularly interested in the human aspects of working with chatbots: how people actually use them, trust them, and fit them into their everyday development work. I hold a Master's degree in Language Technology and a Bachelor's degree in Software Engineering and Management from the [University of Gothenburg](https://www.gu.se). 
 {style="text-align: justify;"}
