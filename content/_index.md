@@ -126,6 +126,8 @@ sections:
 
         **Thesis Supervision:**
 
+        • *Bachelor thesis:* ["Tracybot: Tracing LLM-Generated Code to Prompts"](https://gupea.ub.gu.se/server/api/core/bitstreams/cbdd9fee-8ac9-465e-9a86-8d83e3412c92/content), Main supervisor (2026) - with Aliaksei Khval, Răzvan Albu, Maxine Orlova, Danis Music, and Filipe Araújo Veras Rosa.
+
         • *Bachelor thesis:* "Developer Behavior in Response to LLM-Generated Code Refactoring Suggestions", Main supervisor (2025) - with David Schön, Faiza Amjad, and Tehreem Asif.
 
         • *Master thesis:* "Leveraging Large Language Models for Cybersecurity Risk Assessment", Co-supervisor (2024) - with Fikret Mert Gültekin and Oscar Lilja
