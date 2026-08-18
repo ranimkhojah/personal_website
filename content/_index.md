@@ -167,7 +167,7 @@ sections:
           location: Calgary
           date_start: '2026-06-01'
           date_end: '2026-08-30'
-          description: WASP-funded research visit, admitted as a summer-term visiting researcher to collaborate with Dr. Ahmad Abdellatif on mining software repositories and LLMs for software engineering.
+          description: Admitted as a summer-term visiting researcher to collaborate with Dr. Ahmad Abdellatif on mining software repositories and LLMs for software engineering.
         - title: Researcher (PhD student)
           company: Chalmers University of Technology
           company_logo: org-gc
