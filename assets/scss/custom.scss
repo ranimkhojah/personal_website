@@ -32,6 +32,11 @@ $fs-meta: 0.75rem;     // Dates, small labels, toggle buttons
   height: 180px;
 }
 
+// Contact/social icons (envelope, scholar, github, linkedin, ...)
+.network-icon .big-icon {
+  font-size: 1.2rem !important;
+}
+
 .portrait-title h2 {
   font-size: $fs-header !important;
 }
