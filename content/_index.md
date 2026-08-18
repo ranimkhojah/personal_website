@@ -161,6 +161,13 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Visiting Researcher
+          company: University of Calgary
+          company_logo: org-uofc
+          location: Calgary
+          date_start: '2026-06-01'
+          date_end: '2026-08-30'
+          description: WASP-funded research visit, admitted to the summer term to collaborate with Dr. Ahmad Abdellatif.
         - title: Researcher (PhD student)
           company: Chalmers University of Technology
           company_logo: org-gc
