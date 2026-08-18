@@ -84,6 +84,8 @@ sections:
           tag: dial
         - name: Software Development
           tag: soft
+        - name: Datasets
+          tag: dataset
 
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
@@ -159,6 +161,13 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
+        - title: Visiting Researcher
+          company: University of Calgary
+          company_logo: org-uofc
+          location: Calgary
+          date_start: '2026-06-01'
+          date_end: '2026-08-30'
+          description: Admitted as a summer-term visiting researcher to collaborate with Dr. Ahmad Abdellatif on mining software repositories and LLMs for software engineering.
         - title: Researcher (PhD student)
           company: Chalmers University of Technology
           company_logo: org-gc
