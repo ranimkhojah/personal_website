@@ -95,6 +95,11 @@ $fs-meta: 0.75rem;     // Dates, small labels, toggle buttons
   font-size: $fs-subheader !important;
 }
 
+#recent .article-metadata,
+#recent .article-metadata a {
+  font-size: $fs-body !important;
+}
+
 // Callout boxes (e.g. the "See all publications" note)
 .alert,
 .alert > div {

@@ -84,7 +84,7 @@ sections:
           tag: dial
         - name: Software Development
           tag: soft
-        - name: Artifacts
+        - name: Datasets
           tag: dataset
 
     design:
