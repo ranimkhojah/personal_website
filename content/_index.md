@@ -80,12 +80,12 @@ sections:
       buttons:
         - name: All
           tag: '*'
-        - name: Datasets
-          tag: dataset
         - name: Dialogue Systems
           tag: dial
         - name: Software Development
           tag: soft
+        - name: Datasets
+          tag: dataset
 
     design:
       # Choose how many columns the section has. Valid values: '1' or '2'.
